@@ -2,9 +2,9 @@ package day01;
 
 public class Test08 {
 	public static void main(String[] args) {
-		System.out.printf("%4s : %3s\n", "È¸¿øÀÌ¸§", "È«±æµ¿");
-		System.out.printf("%5s : %3s\n", "È¸¿øÀÌ¸§", "È«±æµ¿");
-		System.out.printf("%5s : %3d\n", "È¸¿ø³ªÀÌ", 24);
-		System.out.printf("%5s : %x\n", "È¸¿ø³ªÀÌ", 24);
+		System.out.printf("%4s : %3s\n", "íšŒì›ì´ë¦„", "í™ê¸¸ë™");
+		System.out.printf("%5s : %3s\n", "íšŒì›ì´ë¦„", "í™ê¸¸ë™");
+		System.out.printf("%5s : %3d\n", "íšŒì›ë‚˜ì´", 24);
+		System.out.printf("%5s : %x\n", "íšŒì›ë‚˜ì´", 24);
 	}
 }

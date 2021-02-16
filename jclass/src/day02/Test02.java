@@ -1,19 +1,19 @@
 package day02;
 
 /*
-	дё╠╦юг юл╦╖ю╩ ют╥б╧ч╬ф╪╜(showInputDialog()
-	╦ч╫цаЖ ц╒ю╩ ╤Г©Ж╪╜ цБ╥б(showMessageDialog())гьаж╢б га╥н╠в╥╔ю╩ юш╪╨го╪╪©Д.
+	Л╧°Й╣╛Л²≤ Л²╢К╕└Л²└ Л·┘К═╔К╟⌡Л∙└Л└°(showInputDialog()
+	К╘■Л▀°Л╖─ Л╟╫Л²└ К²└Л⌡▄Л└° Л╤°К═╔(showMessageDialog())М∙╢Лё╪К┼■ М■└К║°Й╥╦К·╗Л²└ Л·▒Л└╠М∙≤Л└╦Л ■.
  */
-import javax.swing.*; // ╩Г©Кгр е╛╥║╫╨юг ю╖д║╦╕ ╬к╥ааж╢б ╦М╥и
+import javax.swing.*; // Л┌╛Л ╘М∙═ М│╢К·≤Л┼╓Л²≤ Л°└Л╧≤К╔╪ Л∙▄К═╓Лё╪К┼■ К╙┘К═╧
 public class Test02 {
 	
 	public static void main(String[] args) {
-		// грюо
-		// ют╥бц╒ю╩ ╤Г©Ж╪╜ ют╥б╣╔юлем╦╕ ╨╞╪Ж©║ ╠Б╬О╫це╡╢ы.
-		String name = JOptionPane.showInputDialog("дё╠╦юг юл╦╖ю╩ ют╥бго╪╪©Д!");
+		// М∙═Л²╪
+		// Л·┘К═╔Л╟╫Л²└ К²└Л⌡▄Л└° Л·┘К═╔К█╟Л²╢М└╟К╔╪ КЁ─Л┬≤Л≈░ Й╦╟Л√╣Л▀°М┌╗К▀╓.
+		String name = JOptionPane.showInputDialog("Л╧°Й╣╛Л²≤ Л²╢К╕└Л²└ Л·┘К═╔М∙≤Л└╦Л ■!");
 		
-		System.out.println("ют╥б╧чю╨ дё╠╦юг юл╦╖ : " + name);
-		// цБ╥бц╒ю╩ ╤Г©Ж╪╜ ╣╔юлем╦╕ цБ╥бгя╢ы.
-		JOptionPane.showMessageDialog(null, "дё╠╦юл╦╖ : " + name);
+		System.out.println("Л·┘К═╔К╟⌡Л²─ Л╧°Й╣╛Л²≤ Л²╢К╕└ : " + name);
+		// Л╤°К═╔Л╟╫Л²└ К²└Л⌡▄Л└° К█╟Л²╢М└╟К╔╪ Л╤°К═╔М∙°К▀╓.
+		JOptionPane.showMessageDialog(null, "Л╧°Й╣╛Л²╢К╕└ : " + name);
 	}
 }

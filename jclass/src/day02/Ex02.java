@@ -1,23 +1,23 @@
 package day02;
 
 /*
-¹®Á¦ 2 ]
-	»ç°¢ÇüÀÇ °¡·Î¿Í ¼¼·ÎÀÇ ±æÀÌ¸¦ Á¤¼ö·Î ÀÔ·Â¹Þ¾Æ¼­
-	³ÐÀÌ¸¦ Ãâ·ÂÇØÁÖ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä.
+ë¬¸ì œ 2 ]
+	ì‚¬ê°í˜•ì˜ ê°€ë¡œì™€ ì„¸ë¡œì˜ ê¸¸ì´ë¥¼ ì •ìˆ˜ë¡œ ìž…ë ¥ë°›ì•„ì„œ
+	ë„“ì´ë¥¼ ì¶œë ¥í•´ì£¼ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì„¸ìš”.
  */
 import java.util.*;
 public class Ex02 {
 	/*
-		º¯¼ö ¸¸µå´Â ±ÔÄ¢ ]
+		ë³€ìˆ˜ ë§Œë“œëŠ” ê·œì¹™ ]
 			
-			º¯¼ö´Â ¸î°³¸¦ ¸¸µé¾îµµ »ó°üÀÌ ¾øÀ¸³ª
-			°°Àº ÀÌ¸§ÀÇ º¯¼ö´Â ¸¸µé ¼ö ¾ø´Ù.
-			(º¯¼ö ¼±¾ðÀº ÀÌ¹Ì ¸¸µé¾îÁø ÀÌ¸§À¸·Î´Â Àý´ë·Î ÇÒ ¼ö ¾ø´Ù.)
+			ë³€ìˆ˜ëŠ” ëª‡ê°œë¥¼ ë§Œë“¤ì–´ë„ ìƒê´€ì´ ì—†ìœ¼ë‚˜
+			ê°™ì€ ì´ë¦„ì˜ ë³€ìˆ˜ëŠ” ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
+			(ë³€ìˆ˜ ì„ ì–¸ì€ ì´ë¯¸ ë§Œë“¤ì–´ì§„ ì´ë¦„ìœ¼ë¡œëŠ” ì ˆëŒ€ë¡œ í•  ìˆ˜ ì—†ë‹¤.)
 			
-			¿¹ ]
+			ì˜ˆ ]
 				int no = 10;
 				...
-				int no = 100; ===> Àý´ë·Î ¾ÈµÈ´Ù.
+				int no = 100; ===> ì ˆëŒ€ë¡œ ì•ˆëœë‹¤.
 				
 				==> 
 				 int no = 10;
@@ -25,31 +25,31 @@ public class Ex02 {
 				 no = 100;
 	 */
 	public static void main(String[] args) {
-		// ÇÒÀÏ
-		// 1. ÀÔ·Âµµ±¸ ÁØºñÇÏ°í
+		// í• ì¼
+		// 1. ìž…ë ¥ë„êµ¬ ì¤€ë¹„í•˜ê³ 
 		Scanner sc = new Scanner(System.in);
-		// 2. °¡·Î ÀÔ·Â¸Þ¼¼Áö Ãâ·ÂÇÏ°í
-		System.out.print("°¡·Î : ");
-		// 3. °¡·Î ÀÔ·Â¹Þ¾Æ º¯¼ö¿¡ ±â¾ïÇÏ°í
+		// 2. ê°€ë¡œ ìž…ë ¥ë©”ì„¸ì§€ ì¶œë ¥í•˜ê³ 
+		System.out.print("ê°€ë¡œ : ");
+		// 3. ê°€ë¡œ ìž…ë ¥ë°›ì•„ ë³€ìˆ˜ì— ê¸°ì–µí•˜ê³ 
 		int garo = sc.nextInt();
 		/*
-			µ¥ÀÌÅÍ¸¦ ²¨³»´Â ¼ø°£ Scanner ¿¡´Â µ¥ÀÌÅÍ°¡ ºñ¿öÁø´Ù.
-			µû¶ó¼­ ´Ù½Ã ¹Þ¾Æ¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+			ë°ì´í„°ë¥¼ êº¼ë‚´ëŠ” ìˆœê°„ Scanner ì—ëŠ” ë°ì´í„°ê°€ ë¹„ì›Œì§„ë‹¤.
+			ë”°ë¼ì„œ ë‹¤ì‹œ ë°›ì•„ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 		 */
-		// 2-1. ¼¼·Î·Î ÀÔ·Â¸Þ¼¼Áö Ãâ·ÂÇÏ°í
-		System.out.print("¼¼·Î : ");
-		// 3-1. ¼¼·Î ÀÔ·Â¹Þ¾Æ º¯¼ö¿¡ ±â¾ïÇÏ°í
+		// 2-1. ì„¸ë¡œë¡œ ìž…ë ¥ë©”ì„¸ì§€ ì¶œë ¥í•˜ê³ 
+		System.out.print("ì„¸ë¡œ : ");
+		// 3-1. ì„¸ë¡œ ìž…ë ¥ë°›ì•„ ë³€ìˆ˜ì— ê¸°ì–µí•˜ê³ 
 		int sero = sc.nextInt();
-		// 4. ³ÐÀÌ °è»êÇÏ°í
+		// 4. ë„“ì´ ê³„ì‚°í•˜ê³ 
 		/*
-			³ÐÀÌ  = °¡·Î * ¼¼·Î ÀÎµ¥
-			°¡·Î ¿Í ¼¼·Î´Â ¸ðµÎ Á¤¼öÀÌ°í
-			Á¤¼ö(int)¿Í Á¤¼ö(int)ÀÇ ¿¬»ê °á°ú´Â Á¤¼ö(int)ÀÌ¹Ç·Î
-			³ÐÀÌ ¿ª½Ã Á¤¼öÇü µ¥ÀÌÅÍ°¡ µÉ °ÍÀÌ´Ù.
+			ë„“ì´  = ê°€ë¡œ * ì„¸ë¡œ ì¸ë°
+			ê°€ë¡œ ì™€ ì„¸ë¡œëŠ” ëª¨ë‘ ì •ìˆ˜ì´ê³ 
+			ì •ìˆ˜(int)ì™€ ì •ìˆ˜(int)ì˜ ì—°ì‚° ê²°ê³¼ëŠ” ì •ìˆ˜(int)ì´ë¯€ë¡œ
+			ë„“ì´ ì—­ì‹œ ì •ìˆ˜í˜• ë°ì´í„°ê°€ ë  ê²ƒì´ë‹¤.
 		 */
 		int area = garo * sero;
-		// 5. Ãâ·ÂÇÏ°í
+		// 5. ì¶œë ¥í•˜ê³ 
 		System.out.printf("%3s : %5d\n%3s : %5d\n%3s : %5d", 
-							"°¡·Î", garo, "¼¼·Î", sero, "³ÐÀÌ", area);
+							"ê°€ë¡œ", garo, "ì„¸ë¡œ", sero, "ë„“ì´", area);
 	}
 }

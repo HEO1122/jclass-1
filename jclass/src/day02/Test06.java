@@ -1,20 +1,20 @@
 package day02;
 
 /*
-	»ó¼ö 
-		µ¥ÀÌÅÍ¸¦ º¯°æÇÒ ¼ö ¾ø´Â º¯¼ö
+	ìƒìˆ˜ 
+		ë°ì´í„°ë¥¼ ë³€ê²½í•  ìˆ˜ ì—†ëŠ” ë³€ìˆ˜
 		
-		Çü½Ä ]
+		í˜•ì‹ ]
 			
-			final µ¥ÀÌÅÍÅ¸ÀÔ	»ó¼öÀÌ¸§(´ë¹®ÀÚ) = µ¥ÀÌÅÍ ;
+			final ë°ì´í„°íƒ€ìž…	ìƒìˆ˜ì´ë¦„(ëŒ€ë¬¸ìž) = ë°ì´í„° ;
  */
 public class Test06 {
-//	final double PI; // ÀÌÈÄ °´Ã¼ÁöÇâ¿¡¼­ ´Ù½Ã ¼³¸í...
+//	final double PI; // ì´í›„ ê°ì²´ì§€í–¥ì—ì„œ ë‹¤ì‹œ ì„¤ëª…...
 	
 	public static void main(String[] args) {
 		final double PI ;
 		PI = 3.14;
-		// »ó¼öÀÇ °æ¿ì´Â ¼±¾ð°ú ÃÊ±âÈ­¸¦ °°ÀÌ ÇØÁà¾ß ÇÑ´Ù.
+		// ìƒìˆ˜ì˜ ê²½ìš°ëŠ” ì„ ì–¸ê³¼ ì´ˆê¸°í™”ë¥¼ ê°™ì´ í•´ì¤˜ì•¼ í•œë‹¤.
 		
 		System.out.println(PI);
 	}

@@ -1,51 +1,51 @@
 package day02;
 
 /*
-	¹®Á¦ ]
-		¼¼ÀÚ¸® ¼ýÀÚ¸¦ ÀÔ·Â¹Þ¾Æ¼­(¹®ÀÚ¿­·Î)
-		100À» »« °ªÀ» Ãâ·ÂÇØÁÖ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä.
+	ë¬¸ì œ ]
+		ì„¸ìžë¦¬ ìˆ«ìžë¥¼ ìž…ë ¥ë°›ì•„ì„œ(ë¬¸ìžì—´ë¡œ)
+		100ì„ ëº€ ê°’ì„ ì¶œë ¥í•´ì£¼ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì„¸ìš”.
  */
 import java.util.Scanner;
 
 public class Ex01 {
 	public static void main(String[] args) {
-		// ÇÒÀÏ
-		// 1. ÀÔ·Â¹ÞÀ» µµ±¸¸¦ ÁØºñÇÑ´Ù.
+		// í• ì¼
+		// 1. ìž…ë ¥ë°›ì„ ë„êµ¬ë¥¼ ì¤€ë¹„í•œë‹¤.
 		Scanner sc = new Scanner(System.in);
-		// ÀÔ·Â¹ÞÀ» ¸Þ½ÃÁö¸¦ º¸¿©ÁØ´Ù.
-		System.out.print("¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä! : ");
-		// 2. ÀÔ·ÂÀ» ¹Þ¾Æ¼­(¹®ÀÚ¿­·Î) º¯¼ö¿¡ ±â¾ï½ÃÅ²´Ù.
+		// ìž…ë ¥ë°›ì„ ë©”ì‹œì§€ë¥¼ ë³´ì—¬ì¤€ë‹¤.
+		System.out.print("ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”! : ");
+		// 2. ìž…ë ¥ì„ ë°›ì•„ì„œ(ë¬¸ìžì—´ë¡œ) ë³€ìˆ˜ì— ê¸°ì–µì‹œí‚¨ë‹¤.
 		String snum = sc.nextLine();
-		System.out.print("2. ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä! : ");
+		System.out.print("2. ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”! : ");
 		String snum1 = sc.nextLine();
 		/*
-			sc ´Â ³»¿ëÀ» ²¨³»¸é ¾È¿¡ ´ã°ÜÀÖ´Â ³»¿ëÀº Áö¿öÁö°Ô µÈ´Ù.
-			µû¶ó¼­ ÇÑ¹ø¸¸ ²¨³»¿Ã ¼ö ÀÖ´Ù.
+			sc ëŠ” ë‚´ìš©ì„ êº¼ë‚´ë©´ ì•ˆì— ë‹´ê²¨ìžˆëŠ” ë‚´ìš©ì€ ì§€ì›Œì§€ê²Œ ëœë‹¤.
+			ë”°ë¼ì„œ í•œë²ˆë§Œ êº¼ë‚´ì˜¬ ìˆ˜ ìžˆë‹¤.
 			
-			±×¸®°í µÎ¹ø ½ÇÇàÇÒ ¼ö ÀÖ´Ù.
-			ÀÌ¶§´Â µÎ¹ø ÀÔ·ÂÇØÁà¾ß ÇÑ´Ù.
+			ê·¸ë¦¬ê³  ë‘ë²ˆ ì‹¤í–‰í•  ìˆ˜ ìžˆë‹¤.
+			ì´ë•ŒëŠ” ë‘ë²ˆ ìž…ë ¥í•´ì¤˜ì•¼ í•œë‹¤.
 		 */
-		// 3. ÀÔ·Â¹ÞÀº ¹®ÀÚ¿­À» Á¤¼ö·Î º¯È¯½ÃÅ²´Ù.
-		// 		==> snum º¯¼ö¿¡ ÀÔ·ÂÇÑ ¹®ÀÚ¿­ µ¥ÀÌÅÍ°¡ ±â¾ïµÇ¾îÀÖÀ¸´Ï
-//					snumÀ» Á¤¼ö·Î º¯È¯ÇØÁÖÀÚ.
+		// 3. ìž…ë ¥ë°›ì€ ë¬¸ìžì—´ì„ ì •ìˆ˜ë¡œ ë³€í™˜ì‹œí‚¨ë‹¤.
+		// 		==> snum ë³€ìˆ˜ì— ìž…ë ¥í•œ ë¬¸ìžì—´ ë°ì´í„°ê°€ ê¸°ì–µë˜ì–´ìžˆìœ¼ë‹ˆ
+//					snumì„ ì •ìˆ˜ë¡œ ë³€í™˜í•´ì£¼ìž.
 		int num = Integer.parseInt(snum);
 		/*
-			Integer.parseInt(µ¥ÀÌÅÍ);  ÇÔ¼öÀÇ °æ¿ì
-			ÀÔ·ÂµÇ´Â µ¥ÀÌÅÍ°¡ Á¤¼öÇüÅÂÀÇ ¹®ÀÚ¿­ÀÌ ¾Æ´Ñ °æ¿ì´Â
-			Ã³¸®¸¦ ÇÒ ¼ö ¾øÀ¸¹Ç·Î
-			¿¡·¯°¡ ¹ß»ýÇÑ´Ù.
+			Integer.parseInt(ë°ì´í„°);  í•¨ìˆ˜ì˜ ê²½ìš°
+			ìž…ë ¥ë˜ëŠ” ë°ì´í„°ê°€ ì •ìˆ˜í˜•íƒœì˜ ë¬¸ìžì—´ì´ ì•„ë‹Œ ê²½ìš°ëŠ”
+			ì²˜ë¦¬ë¥¼ í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ
+			ì—ëŸ¬ê°€ ë°œìƒí•œë‹¤.
 			
-			¿¹ ]
-				Integer.parseInt("°¡³ª´Ù");
-				==> Á¤¼ö·Î º¯È¯ÀÌ ºÒ°¡´ÉÇÏ¹Ç·Î ¿¡·¯°¡ ¹ß»ýÇÑ´Ù.
+			ì˜ˆ ]
+				Integer.parseInt("ê°€ë‚˜ë‹¤");
+				==> ì •ìˆ˜ë¡œ ë³€í™˜ì´ ë¶ˆê°€ëŠ¥í•˜ë¯€ë¡œ ì—ëŸ¬ê°€ ë°œìƒí•œë‹¤.
 		 */
-		// 4. 100 À» »©´Â °è»êÀ» ÇØ¼­ º¯¼ö¿¡ ±â¾ï½ÃÅ²´Ù.
+		// 4. 100 ì„ ë¹¼ëŠ” ê³„ì‚°ì„ í•´ì„œ ë³€ìˆ˜ì— ê¸°ì–µì‹œí‚¨ë‹¤.
 		int result = num - 100;
-		// 5. °á°ú¸¦ Ãâ·ÂÇÑ´Ù.
-		System.out.println("ÀÔ·Â¹ÞÀº ¹®ÀÚ¿­ : " + snum);
-		// <==	ÀÌ ¶§ »ç¿ëµÇ´Â ¿¬»êÀÚ + ´Â ´õÇÏ±â ¿¬»êÀÚ°¡ ¾Æ´Ï°í
-		// 		¹®ÀÚ¿­À» °áÇÕÇØÁÖ´Â °áÇÕ ¿¬»êÀÚÀÌ´Ù.
-		System.out.println("¹®ÀÚ¿­À» º¯È¯ÇÑ Á¤¼ö : " + num);
-		System.out.println("100À» »« °á°ú : " + result);
+		// 5. ê²°ê³¼ë¥¼ ì¶œë ¥í•œë‹¤.
+		System.out.println("ìž…ë ¥ë°›ì€ ë¬¸ìžì—´ : " + snum);
+		// <==	ì´ ë•Œ ì‚¬ìš©ë˜ëŠ” ì—°ì‚°ìž + ëŠ” ë”í•˜ê¸° ì—°ì‚°ìžê°€ ì•„ë‹ˆê³ 
+		// 		ë¬¸ìžì—´ì„ ê²°í•©í•´ì£¼ëŠ” ê²°í•© ì—°ì‚°ìžì´ë‹¤.
+		System.out.println("ë¬¸ìžì—´ì„ ë³€í™˜í•œ ì •ìˆ˜ : " + num);
+		System.out.println("100ì„ ëº€ ê²°ê³¼ : " + result);
 	}
 }

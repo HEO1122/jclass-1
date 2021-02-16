@@ -1,16 +1,16 @@
 package day02;
 
 /*
-	´ëÀÔ ¿¬»êÀÚ
-	==> Æ¯Á¤ÇÑ »ó¼ö°ªÀÌ³ª º¯¼ö °ª ¶Ç´Â °´Ã¼¸¦ 
-		º¯¼ö¿¡ ±â¾ï½ÃÅ³¶§ »ç¿ëÇÏ´Â ¿¬»êÀÚ.
+	ëŒ€ìž… ì—°ì‚°ìž
+	==> íŠ¹ì •í•œ ìƒìˆ˜ê°’ì´ë‚˜ ë³€ìˆ˜ ê°’ ë˜ëŠ” ê°ì²´ë¥¼ 
+		ë³€ìˆ˜ì— ê¸°ì–µì‹œí‚¬ë•Œ ì‚¬ìš©í•˜ëŠ” ì—°ì‚°ìž.
  */
 public class Test03 {
 	public static void main(String[] args) {
-		int no = 10; // ÀÌ¶§ = Àº ´ëÀÔ¿¬»êÀÚ.
+		int no = 10; // ì´ë•Œ = ì€ ëŒ€ìž…ì—°ì‚°ìž.
 		System.out.println("1. no : " + no);
 		
-		// no¿¡ 5¸¦ ´©Àû ¿¬»êÇÑ °á°ú ¸¦ ´Ù½Ã no¿¡ ´ëÀÔÇÑ´Ù.
+		// noì— 5ë¥¼ ëˆ„ì  ì—°ì‚°í•œ ê²°ê³¼ ë¥¼ ë‹¤ì‹œ noì— ëŒ€ìž…í•œë‹¤.
 		no = no + 5;
 		System.out.println("2. no : " + no);
 		
@@ -19,17 +19,17 @@ public class Test03 {
 		System.out.println("3. no : " + no);
 		
 		// -= 
-		no -= 10; // no °¡ ±â¾ïÇÑ ¼ýÀÚ¿¡¼­ 10À» »« °á°ú¸¦ no¿¡ ±â¾ï½ÃÅ²´Ù.
+		no -= 10; // no ê°€ ê¸°ì–µí•œ ìˆ«ìžì—ì„œ 10ì„ ëº€ ê²°ê³¼ë¥¼ noì— ê¸°ì–µì‹œí‚¨ë‹¤.
 		System.out.println("4. no : " + no);
 		
 		// *=
-		no *= 2; // no°¡ ±â¾ïÇÑ ¼ýÀÚ¿¡ 2¸¦ °öÇØ¼­ no¿¡ ±â¾ï½ÃÅ²´Ù.
+		no *= 2; // noê°€ ê¸°ì–µí•œ ìˆ«ìžì— 2ë¥¼ ê³±í•´ì„œ noì— ê¸°ì–µì‹œí‚¨ë‹¤.
 		System.out.println("5. no : " + no);
 		
-		no /= 2; // no°¡ ±â¾ïÇÑ ¼ýÀÚ¸¦ 2·Î ³ª´«°ªÀ» ´Ù½Ã no¿¡ ±â¾ï½ÃÅ²´Ù.
+		no /= 2; // noê°€ ê¸°ì–µí•œ ìˆ«ìžë¥¼ 2ë¡œ ë‚˜ëˆˆê°’ì„ ë‹¤ì‹œ noì— ê¸°ì–µì‹œí‚¨ë‹¤.
 		System.out.println("6. no : " + no);
 		
-		no %= 3; // no°¡ ±â¾ïÇÑ ¼ýÀÚ¸¦ 3À¸·Î ³ª´« ³ª¸ÓÁö¸¦ no±â¾ï½ÃÅ²´Ù.
+		no %= 3; // noê°€ ê¸°ì–µí•œ ìˆ«ìžë¥¼ 3ìœ¼ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ë¥¼ noê¸°ì–µì‹œí‚¨ë‹¤.
 		System.out.println("7. no : " + no);
 	}
 }
