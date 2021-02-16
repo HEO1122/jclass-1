@@ -17,5 +17,34 @@ package day02;
 		를 사용해서 처리하세요.
  */
 public class Ex05 {
-
+	public static void main(String[] args) {
+		// 할일
+		// 변수준비한다.
+		int man, chun, baek, ten, il, money, tmoney;
+		money = 54232;
+		tmoney = money;
+		
+		//  만원단위 계산
+		man = tmoney / 10000;
+		// 남은 금액을 변수에 다시 기억시킨다.
+		tmoney %= 10000; // ==> tmoney = tmoney % 10000;
+		
+		chun = tmoney / 1000;
+		tmoney %= 1000;
+		
+		baek = tmoney / 100;
+		tmoney %= 100;
+		
+		ten = tmoney / 10;
+		
+		il = tmoney % 10;
+		
+		// 결과 출력
+		System.out.println("총 지불 금액 : " + money);
+		System.out.println("만원짜리 지불 장 수 : " + man);
+		System.out.println("천원짜리 지불 장 수 : " + chun);
+		System.out.println("100원짜리 지불 갯수 : " + baek);
+		System.out.println("10원짜리 지불 갯수 : " + ten);
+		System.out.println("1원짜리 지불 갯수 : " + il);
+	}
 }
