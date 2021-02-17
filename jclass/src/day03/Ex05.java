@@ -9,8 +9,15 @@ package day03;
 			27 ==> 30이 가장 가까운 10의 배수
 			32 ==> 30이 가장 가까운 10의 배수
 			
-			
  */
 public class Ex05 {
-
+	public static void main(String[] args) {
+		int no = (int)(Math.random() * 71) + 25; // 34
+		
+		int rest = no % 10; // 4
+		
+		int result = (rest < 5) ? (no / 10 * 10) : ((no / 10 + 1) * 10);
+		
+		System.out.println("랜덤하게 발생한 숫자 " + no + " 와 가까운 10의 배수는 " + result + " 입니다.");
+	}
 }
