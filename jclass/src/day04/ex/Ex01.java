@@ -19,5 +19,7 @@ package day04.ex;
 	switch ~ case 구문으로 처리하세요.
  */
 public class Ex01 {
-
+	public static void main(String[] args) {
+		
+	}
 }
