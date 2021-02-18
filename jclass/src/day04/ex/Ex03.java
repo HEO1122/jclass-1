@@ -19,6 +19,41 @@ package day04.ex;
  */
 public class Ex03 {
 	public static void main(String[] args) {
+		// 부서번호 발생
+		int dno = (int)(Math.random() * 40 + 10);
+		// 큰수 - 작은수  + 1 
+		// ==> 49 - 10 + 1 ==> 40
 		
+		
+		String dname = "";
+		/*
+		// 조건처리하고
+		if(dno < 20) {
+			dname = "총무부";
+		} else if(dno < 30) {
+			dname = "영업부";
+		} else if(dno < 40) {
+			dname = "회계부";
+		} else {
+			dname = "개발부";
+		}
+		*/
+		
+		switch(dno / 10) {
+		case 1:
+			dname = "총무부";
+			break;
+		case 2:
+			dname = "영업부";
+			break;
+		case 3:
+			dname = "회계부";
+			break;
+		default:
+			dname = "개발부";
+		}
+		
+		System.out.println("입력한 부서번호 " + dno + " 는 " + 
+										dname + " 입니다.");
 	}
 }
