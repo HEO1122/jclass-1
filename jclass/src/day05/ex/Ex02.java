@@ -18,6 +18,49 @@ package day05.ex;
 						12345 / 10 ===> 1234
 						12345 % 10 ===> 5
  */
+//import java.util.*;
 public class Ex02 {
-
+	public static void main(String[] args) {
+		/*
+		int ino = (int)(Math.random()* (99999 - 10000 + 1) + 10000);
+		
+		// 변수 준비
+		int sum = 0;
+		
+		//	문자열로 처리하는 방법
+		String sno = ino + "";
+		// 하나씩 꺼내서 더해주고
+		for(int  i = 0 ; i < 5 ; i++) {
+			// 다섯번 반복해서 하나씩 꺼내고
+			char ch = sno.charAt(i);
+			// 문자열로 바꾸고
+			String tmp = ch + "";
+			// 정수로 바꾸고
+			int no = Integer.parseInt(tmp);
+			// 합에다 더해주고
+			sum = sum + no;
+		}
+		 */
+		
+		/*
+			숫자로 처리하는 방법
+		 */
+		int ino = (int)(Math.random()* (99999 - 10000 + 1) + 10000);
+		
+		// 변수 준비
+		int sum = 0;
+		
+		// 처리용 변수 준비
+		int tmp = ino ;
+		
+		for(int i = 0 ; i < 5 ; i++ ) {
+			sum = sum + (tmp % 10);
+			tmp = tmp / 10;
+		}
+		
+		// 결과 출력하고
+		System.out.println("랜덤하게 발생한 숫자 : " + ino );
+		System.out.println("각자리수를 더한 값 : " + sum);
+	}
 }
+
