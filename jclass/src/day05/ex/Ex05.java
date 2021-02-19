@@ -14,5 +14,7 @@ package day05.ex;
 					6 과 9의 최대공약수는 3이다.
  */
 public class Ex05 {
-
+	public static void main(String[] args) {
+		
+	}
 }

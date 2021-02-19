@@ -11,6 +11,26 @@ package day05.ex;
 		가 출력되도록 하고
 		정답을 맞출때 까지 반복하도록 하세요.
  */
+import java.util.*;
 public class Ex03 {
-
+	public static void main(String[] args) {
+		int no1 = (int)(Math.random()*90 + 10);
+		
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.print("무슨 수게요??? : " );
+			int no = sc.nextInt();
+			
+			if(no > no1) {
+				System.out.println("큰 수입니다.");
+			} else if(no < no1) {
+				System.out.println("작은수입니다.");
+			} else if(no == no1) {
+				System.out.println("발생한 숫자는 " + no + " 로 정답입니다.");
+				break;
+			} else {
+				System.out.println("잘못입력했습니다.");
+			}
+		}
+	}
 }
