@@ -1,5 +1,7 @@
 package day05;
 
+
+// 문자를 문자열로 바꾸는 방법...
 public class Test03 {
 	public static void main(String[] args) {
 		char ch = (char)(Math.random() * 256);

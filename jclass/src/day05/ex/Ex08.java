@@ -12,5 +12,17 @@ package day05.ex;
 				2, 3, 5, 7, ....
  */
 public class Ex08 {
-
+	public static void main(String[] args) {
+		
+		lbl:
+		for(int i = 3; i <= 100; i++) {
+			
+			for(int j = 2; j < i ; j++ ) {
+				if(i % j == 0) {
+					continue lbl;
+				}
+			}
+			System.out.print(i + ", ");
+		}
+	}
 }
