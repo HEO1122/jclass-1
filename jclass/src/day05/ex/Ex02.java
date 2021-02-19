@@ -43,8 +43,29 @@ public class Ex02 {
 		 */
 		
 		/*
-			숫자로 처리하는 방법
+			문자열로 처리하는 방법 2]
 		 */
+		int ino = (int)(Math.random()* (99999 - 10000 + 1) + 10000);
+		
+		// 변수 준비
+		int sum = 0;
+		
+		String sno = ino + "";
+		/*
+			문자 '0' 을 숫자 0으로 변환하는 방법
+			 
+			 	'0' - '0' = 0
+		 */
+		for(int i = 0 ; i < 5; i++ ) {
+			char ch = sno.charAt(i);
+			
+			int tmp = ch - '0';
+			
+			sum += tmp;
+		}
+		
+		/*
+			숫자로 처리하는 방법 
 		int ino = (int)(Math.random()* (99999 - 10000 + 1) + 10000);
 		
 		// 변수 준비
@@ -57,6 +78,7 @@ public class Ex02 {
 			sum = sum + (tmp % 10);
 			tmp = tmp / 10;
 		}
+		 */
 		
 		// 결과 출력하고
 		System.out.println("랜덤하게 발생한 숫자 : " + ino );
