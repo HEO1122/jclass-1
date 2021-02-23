@@ -14,8 +14,17 @@ package day05.ex;
  */
 public class Extra03 {
 	public static void main(String[] args) {
-		for(int i = 0 ; ;i++) {
-			
+		for(int i = 0 ; i < 2 ;i++) {
+			for(int j = 0 ; j < 9 ; j++) {
+				for(int k = 0 ; k < 4 ; k++ ) {
+					int dan = 4*i + k + 2;
+					String str = (k == 3) ? "\n" : "\t";
+//					String gugu = dan + " x " + (j + 1) + " = " + (dan *(j+1));
+					System.out.printf("%2d %s %2d %s %2d %s",
+										dan,"x", (j + 1), "=", dan *(j+1), str);
+				}
+			}
+			System.out.println();
 		}
 	}
 }
