@@ -20,5 +20,44 @@ package day06.ex;
 			for 명령으로 처리하세요.
  */
 public class Ex05 {
-
+	public static void main(String[] args) {
+		// 각동물의 마리수를 기억할 변수를 만든다.
+		
+		/*
+		// 닭의 마리수 증가
+		for(int i = 0; i < 53 ; i++ ) {
+			// 양의 마리수 증가
+			for(int j = 0 ; j < 53 ; j++) {
+				int ddari = i * 2;
+				int ydari = j * 4;
+				if( i + j == 52 & (ddari + ydari == 144)) {
+					System.out.println("닭이 " + i + " 마리이고 양이 " + j + " 마리인 경우");
+					break;
+				}
+			}
+		}
+		*/
+		
+		int dak = 0;
+		
+		int yang = 0;
+		while(dak < 53) {
+			yang = 0;
+			System.out.println("닭 : " + dak);
+			System.out.println("양 : " + yang);
+			System.out.println();
+			while(yang < 53) {
+				int d = dak * 2;
+				int y = yang * 4;
+				
+				if(d + y == 144 & dak + yang == 52 ) {
+					System.out.println("닭이 " + dak + " 마리이고 양이 " + yang + " 마리인 경우");
+					break;
+				}
+				yang++;
+			}
+			dak++;
+		}
+		
+	}
 }
