@@ -20,6 +20,18 @@ public class Test03 {
 		}
 		
 		System.out.println(Arrays.deepToString(no));
+		
+		// 석차
+		for(int i = 0 ; i < 10; i++ ) {
+			for(int j = 0 ; j < 10; j++ ) {
+				if(i == j) continue;
+				
+				if(no[i][0] < no[j][0]) {
+					no[i][1] += 1;
+				}
+			}
+		}
+		System.out.println(Arrays.deepToString(no));
 	}
 
 }
