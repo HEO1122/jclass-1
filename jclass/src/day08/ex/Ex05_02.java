@@ -33,6 +33,8 @@ public class Ex05_02 {
 			친구4	:
 			친구5	:
 		 */
+		
+		String[][] friend1 = new String[5][5];
 	}
 
 }
