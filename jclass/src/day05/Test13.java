@@ -7,6 +7,9 @@ public class Test13 {
 		for(int dan = 2; dan < 10 ; dan++ ) {
 			System.out.println("** " + dan + " 단 **");
 			for(int gop = 1; gop < 10 ; gop++ ) {
+				if(dan == 5 && gop > 5) {
+					break; 
+				}
 				System.out.println(dan + " x " + gop + " = " + (dan * gop));
 			}
 			System.out.println();
