@@ -1,5 +1,7 @@
 package day08.ex;
 
+import java.util.Arrays;
+
 public class Ex05_02 {
 
 	public static void main(String[] args) {
@@ -34,7 +36,32 @@ public class Ex05_02 {
 			친구5	:
 		 */
 		
+		for(int i = 0 ; i < friend.length ; i++ ) {
+			friend[i][0] = f1[i];
+			friend[i][1] = f2[i];
+			friend[i][2] = f3[i];
+			friend[i][3] = f4[i];
+			friend[i][4] = f5[i];
+		}
+		
+		// 출력
+		for(String[] s : friend) {
+			System.out.println(Arrays.toString(s));
+		}
+		System.out.println();
 		String[][] friend1 = new String[5][5];
+		
+		// 복사
+		for(int i = 0 ; i < friend1.length ; i++ ) {
+			for(int j = 0 ; j < friend1[i].length; j++ ) {
+				friend1[i][j] = friend[j][i];
+			}
+		}
+		
+		// 출력
+		for(String[] s : friend1) {
+			System.out.println(Arrays.toString(s));
+		}
 	}
 
 }
