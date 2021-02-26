@@ -12,11 +12,46 @@ package day10.ex;
 public class Ex03 {
 	int width, height;
 	public Ex03() {
-		
+		getData(getSoo(), getSoo());
 	}
 	
 	public static void main(String[] args) {
 		new Ex03();
 	}
-
+	
+	// 10  ~ 45 사이의 정수를 랜덤하게 발생시켜서 반환해주는 함수
+	public int getSoo() {
+		return (int)(Math.random()* 36 + 10);
+	}
+	
+	// 가로 셋팅 함수
+	public void setWidth(int w) {
+		width = w;
+	}
+	
+	// 세로 셋팅함수
+	public void setHeight(int h) {
+		height = h;
+	}
+	
+	public double getArea() {
+		// 전역변수 width와 height를 이용해서 면적을 계산해서 반환해주는 함수
+		double area = width * height;
+		
+		return area;
+	}
+	
+	// 셋팅하고 출력해주는 함수
+	public void getData(int w, int h) {
+		// 가로셋팅
+		setWidth(w);
+		// 세로셋팅
+		setHeight(h);
+		// 면적 구하고
+		double area = width * height;
+		// 출력하고
+		System.out.println("사각형 가로 : " + width );
+		System.out.println("사각형 세로 : " + height );
+		System.out.println("사각형 면적 : " + area );
+	}
 }

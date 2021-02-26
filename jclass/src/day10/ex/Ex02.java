@@ -13,8 +13,62 @@ package day10.ex;
 public class Ex02 {
 	int[][] score = new int[10][6];
 	
-	public static void main(String[] args) {
+	public Ex02() {
+		// 배열 셋팅하고
+		setScore();
+		// 총점 계산해서 셋팅하고
+		setTotal();
+		// 총점으로 정렬하고
+		setSort();
+		// 출력하고
+		toPrint();
 		
 	}
-
+	
+	public static void main(String[] args) {
+		new Ex02();
+	}
+	
+	// 점수 셋팅함수
+	public void setScore() {
+		for(int i = 0 ; i < score.length; i++ ) {
+			for(int j = 0 ; j < score[i].length - 1 ; j++ ) {
+				score[i][j] = (int)(Math.random()* 41 + 60);
+			}
+		}
+	}
+	
+	// 총점 계산 함수
+	public void setTotal() {
+		for(int i = 0 ; i < score.length; i++ ) {
+			for(int j = 0 ; j < score[i].length - 1; j++ ) {
+				score[i][score[i].length - 1] += score[i][j];
+			}
+		}
+	}
+	
+	// 정렬해주는 함수
+	public void setSort() {
+		for(int i = 0 ; i < score.length - 1 ; i++ ) {
+			for(int j = i + 1 ; j < score.length ; j++ ) {
+				int t1 = score[i][5];
+				int t2 = score[j][5];
+				if(t1 < t2) {
+					int[] tmp = score[i]; // i 번째 주소 기억시키고
+					score[i] = score[j]; // i 번째에 j 번째 주소 기억시키고
+					score[j] = tmp; // j 번째에 i 번째의 주소 기억시키고
+				}
+			}
+		}
+	}
+	
+	// 출력해주는 함수
+	public void toPrint() {
+		for(int i = 0 ; i < score.length ; i++ ) {
+			for(int j = 0 ; j < score[i].length ; j++ ) {
+				System.out.printf("%3d ", score[i][j]);
+			}
+			System.out.println();
+		}
+	}
 }
