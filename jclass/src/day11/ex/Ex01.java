@@ -12,7 +12,22 @@ package day11.ex;
 		면적은 함수로 처리하세요.
  */
 public class Ex01 {
-	public static void main(String[] args) {
+	
+	public Ex01() {
+		Semo[] semo = new Semo[5];
+		// 세모를 다섯개 기억할 배열만 만든 상태이다.
+		// 각 방에는 아직 세모 객체가 기억되어있지 않은 상태다.
+		for(int i = 0 ; i < semo.length ; i++ ) {
+			semo[i] = new Semo();
+		}
 		
+		for(int i = 0 ; i < semo.length ; i++ ) {
+			System.out.printf("밑변 : %2d - 높이 : %2d - 넓이 : %5.2f\n", 
+								semo[i].width, semo[i].height, semo[i].area);
+		}
+	}
+	
+	public static void main(String[] args) {
+		new Ex01();
 	}
 }

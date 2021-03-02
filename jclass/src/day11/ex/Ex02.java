@@ -10,7 +10,16 @@ package day11.ex;
 public class Ex02 {
 	
 	public Ex02() {
+		Circle[] won = new Circle[10];
+		// 각방에 Circle 인스턴스 만들어서 기억시키고
+		for(int i = 0 ; i < won.length ; i++ ) {
+			won[i] = new Circle();
+		}
 		
+		// 출력하고
+		for(Circle c : won) {
+			c.toPrint();
+		}
 	}
 	
 	public static void main(String[] args) {
