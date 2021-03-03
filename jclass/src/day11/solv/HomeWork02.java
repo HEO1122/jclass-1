@@ -45,6 +45,7 @@ public class HomeWork02 {
 			// 버퍼에 남아있는 내용 강제로 꺼내오고...
 			sc.nextLine();
 			
+			
 			// 종료코드 검사하고
 			if(no == 9) {
 				System.out.println("프로그램을 종료합니다.");
@@ -81,7 +82,8 @@ public class HomeWork02 {
 		// 각 인덱스의 이름을 비교해서 같은 이름이면 정보를 출력해준다.
 		for(int i = 0 ; i < st.length ; i++ ) {
 			if(st[i].getName().equals(name)) {
-				System.out.println(st[i].toString());
+//				System.out.println(st[i].toString());
+				toPrint(st, i);
 				break;
 			}
 		}
@@ -97,7 +99,8 @@ public class HomeWork02 {
 		// 각 인덱스의 이름을 비교해서 같은 이름이면 정보를 출력해준다.
 		for(int i = 0 ; i < st.length ; i++ ) {
 			if(st[i].getId().equals(id)) {
-				System.out.println(st[i].toString());
+//				System.out.println(st[i].toString());
+				toPrint(st, i);
 				break;
 			}
 		}
