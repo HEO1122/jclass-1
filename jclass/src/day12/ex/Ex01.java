@@ -18,18 +18,16 @@ package day12.ex;
 
 import java.util.*;
 public class Ex01 {
-	Scanner sc = new Scanner(System.in);
+	Scanner sc; // 이 상태는 아직 입력도구를 준비한 상태는 아니고 변수만 준비된 상태이다.
+	
 	public Ex01() {
+		sc  = new Scanner(System.in);
 		Song[] list = getList();
 		// 배열에 입력된 내용 출력하고
 		toPrint(list);
 		System.out.println();
 		// 타이틀 입력받아서 출력해주고
 		exec(list);
-		
-		
-		
-		
 		
 		sc.close();
 	}
