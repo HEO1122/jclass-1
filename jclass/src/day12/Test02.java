@@ -1,6 +1,6 @@
 package day12;
 
-public class Test01 {
+public class Test02 {
 	private String name = "둘리";
 
 	public String getName() {
@@ -9,7 +9,11 @@ public class Test01 {
 
 	public void setName(String name) {
 		this.name = name;
-		
+	}
+
+	@Override
+	public String toString() {
+		return "name=" + name;
 	}
 	
 }
