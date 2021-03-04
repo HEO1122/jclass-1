@@ -21,9 +21,56 @@ package day13.ex;
 public class Ex01 {
 
 	public Ex01() {
+		Student[] stud = getStud();
 		
+		// 출력해보자
+		for(int i = 0 ; i < stud.length ; i++ ) {
+			System.out.println(stud[i]);
+			/*
+				println() 는  toString() 를 자동호출해서 사용한다.
+			 */
+		}
 	}
+	
+	// 학생 배열 반환해주는 함수
+	public Student[] getStud() {
+		Student[] s = new Student[5];
+		String[] name = { "홍길동", "둘  리", "고길동", "희동이", "도우너" };
+		int ban = 2;
+		int no = 1;
+		
+		// 배열 셋팅해주고
+		for(int i = 0 ; i < s.length ; i++ ) {
+			// 먼저 과목별 점수 랜덤하게 만들고
+			int k = (int)(Math.random()*41 + 60);
+			int e = (int)(Math.random()*41 + 60);
+			int m = (int)(Math.random()*41 + 60);
+			// 먼저 각방에 인스턴스를 만들어서 기억시키고
+			s[i] = new Student(name[i], ban, no++, k, e, m);
 
+/*
+			s[i] = new Student(name[i], ban, no++);
+			s[i].setKor(k);
+			s[i].setEng(e);
+			s[i].setMath(m);
+			s[i].setTotal();
+			s[i].setAvg();
+*/
+/*
+			s[i] = new Student();
+			s[i].setName(name[i]);
+			s[i].setBan(ban);
+			s[i].setNo(no++);
+			s[i].setKor(k);
+			s[i].setEng(e);
+			s[i].setMath(m);
+			s[i].setTotal();
+			s[i].setAvg();
+*/
+		}
+		return s;
+	}
+	
 	public static void main(String[] args) {
 		new Ex01();
 	}

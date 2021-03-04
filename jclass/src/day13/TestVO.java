@@ -23,6 +23,7 @@ public class TestVO {
 		return sno;
 	}
 	public void setSno(String sno) {
+//		sno = sno;
 		this.sno = sno;
 	}
 	public String getName() {

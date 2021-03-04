@@ -19,7 +19,18 @@ package day13.ex;
 public class Ex02 {
 
 	public Ex02() {
-		
+		MyPoint p1 = new MyPoint();
+		// p1 출력
+		p1.display();
+		p1.setXy(3,  5);
+		p1.display();
+		System.out.println();
+		// 배열로 MyPoint 객체를 만들어보자.
+		int[] no = {5, 10};
+//		MyPoint p2 = new MyPoint(no); // ---- OK
+		MyPoint p2 = new MyPoint(new int[] {5, 10});
+		// 출력
+		p2.display();
 	}
 
 	public static void main(String[] args) {
