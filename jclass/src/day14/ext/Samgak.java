@@ -36,6 +36,7 @@ public class Samgak extends Figure {
 	}
 	
 	public void toPrint() { // Figure.toPrint() 오버라이딩(함수의 재정의)
-		System.out.printf("밑변이 %2d 이고 높이가 %2d 이고 넓이가 %3d 인 삼각형\n", width, height, area);
+		System.out.printf("밑변이 %2d 이고 높이가 %2d 이고 넓이가 %3d 인 삼각형\n", 
+																	width, height, area);
 	}
 }
