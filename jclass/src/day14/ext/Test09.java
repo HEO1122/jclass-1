@@ -1,14 +1,15 @@
 package day14.ext;
 
+import static java.lang.Math.*;
 public class Test09 {
 
 	public Test09() {
-		// TODO Auto-generated constructor stub
+		Figure f1 = new Samgak((int)(random()*10) + 1, (int)(random()*10) + 1);
+		f1.toPrint();
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		new Test09();
 	}
 
 }
