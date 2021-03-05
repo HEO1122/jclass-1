@@ -20,7 +20,6 @@ public class Test10 {
 		for(int i = 0 ; i < g.length ; i++ ) {
 			g[i] = getGrand();
 		}
-		String
 		// 출력
 		for(Grand gg : g) {
 			gg.toPrint();
