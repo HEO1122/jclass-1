@@ -7,10 +7,11 @@ package day15.ex;
 
  */
 public abstract class Figure {
-	public abstract double getArea();
 	/*
 		추상함수 형식 ]
 			[접근지정자]	abstract 	반환값타입		함수이름(매개변수);
 			==> 절대로 블럭( {} )이 생기면 안된다.
 	 */
+	public abstract double getArea();
+	public abstract void toPrint();
 }
