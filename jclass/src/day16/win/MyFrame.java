@@ -10,7 +10,8 @@ public class MyFrame {
 	
 	public MyFrame() {
 		setWin();
-		setBg();
+//		setBg();
+		addEvt();
 	}
 	
 	// 창 띄워주는 함수
@@ -44,10 +45,41 @@ public class MyFrame {
 		/*
 			마우스 이벤트 관련 클래스들의 범위
 				
-				MouseListener	>	MouseAdaper		>	MyCloseEvt
+				MouseListener	>	MouseAdapter		>	MyCloseEvt
 		 */
 	}
+	
+	// 이벤트 처리함수
+	public void addEvt() {
+		btn1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e)  {
+				System.exit(0);
+			}
+		});
+		
+		// 색상변경 이벤트 변수
+		ActionListener evt = this.new MyChangeEvt01();
+		btn2.addActionListener(evt);
+	}
+	
 	public static void main(String[] args) {
 		new MyFrame();
+	}
+	
+	// 전역 내부 클래스 - 색상을 변경시키는 기능의 클래스
+	class MyChangeEvt01 implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			int red = (int)(Math.random()*256);
+			int green = (int)(Math.random()*256);
+			int blue = (int)(Math.random()*256);
+			
+			Color color = new Color(red, green, blue);
+			
+			pan.setBackground(color);
+		}
+		
 	}
 }

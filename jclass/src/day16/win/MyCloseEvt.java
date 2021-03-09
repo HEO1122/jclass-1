@@ -11,13 +11,7 @@ public class MyCloseEvt extends MouseAdapter {
 			
 		2. windowClosing() 를 오버라이드 한다.
  */
-/*
-	MyFrame fr;
-	public MyCloseEvt() {}
-	public MyCloseEvt(MyFrame fr) {
-		this.fr = fr;
-	}
-*/	
+
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// 실행중인 프로그램을 종료하는 명령
