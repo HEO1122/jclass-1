@@ -9,18 +9,25 @@ public class MyFrame {
 	private JButton btn1, btn2;
 	
 	public MyFrame() {
+		setWin();
+		setBg();
+	}
+	
+	// 창 띄워주는 함수
+	public void setWin() {
 		fr = new JFrame();
 		fr.setDefaultCloseOperation(fr.EXIT_ON_CLOSE);
 		
 		pan = new JPanel();
+		pan.setBackground(Color.blue);
 		
 		blPan = new JPanel(new BorderLayout());
 		blPan.setSize(450, 30);
 		
 		btn1 = new JButton("exit");
-		btn1.setPreferredSize(new Dimension(225, 30));
+		btn1.setPreferredSize(new Dimension(217, 30));
 		btn2 = new JButton("change");
-		btn2.setPreferredSize(new Dimension(225, 30));
+		btn2.setPreferredSize(new Dimension(217, 30));
 		
 		blPan.add(btn1, BorderLayout.WEST);
 		blPan.add(btn2, BorderLayout.EAST);
@@ -30,9 +37,17 @@ public class MyFrame {
 		fr.setSize(450,480);
 		fr.setVisible(true);
 	}
-
+	// 색상 변경 이벤트 처리함수
+	public void setBg() {
+		btn2.addActionListener(new MyChangeEvt(this));
+		btn1.addMouseListener(new MyCloseEvt());
+		/*
+			마우스 이벤트 관련 클래스들의 범위
+				
+				MouseListener	>	MouseAdaper		>	MyCloseEvt
+		 */
+	}
 	public static void main(String[] args) {
 		new MyFrame();
 	}
-
 }
