@@ -5,6 +5,10 @@ public class Test09 {
 	public ArrayList names, ages, gens, kees;
 
 	public Test09() {
+		setNames();
+		setAges();
+		setGens();
+		setKees();
 	}
 	
 	// names Setting
@@ -66,10 +70,6 @@ public class Test09 {
 		ages.add(34);
 		ages.add(146);
 		ages.add(55);
-	}
-	
-	public static void main(String[] args) {
-		new Test09();
 	}
 
 }

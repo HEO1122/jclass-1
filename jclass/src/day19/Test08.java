@@ -33,7 +33,7 @@ public class Test08 {
 //			System.out.println(o); // ==> 맨 마지막 오버라이드한  toString() 함수가 호출
 			
 			// toPrint() 함수 호출
-			((Semo) o).toPrint();
+			((Figure) o).toPrint();
 		}
 		
 		System.out.println(vec.capacity());
