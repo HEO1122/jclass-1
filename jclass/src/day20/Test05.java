@@ -17,6 +17,48 @@ public class Test05 {
 		ArrayList list = getList();
 		// 리스트 출력하고
 		printList(list);
+		System.out.println();
+		// 오름차순 정렬
+		Collections.sort(list, new MySort());
+		// 리스트 출력하고
+		printList(list);
+		
+		System.out.println();
+		// 내림차순 정렬
+		Collections.sort(list, new Comparator() { // 무명 내부클래스
+			@Override
+			public int compare(Object o1, Object o2) {
+				
+				int age1 = (int) ((Map.Entry) o1).getValue();
+				int age2 = (int) ((Map.Entry) o2).getValue();
+				
+				return age2 - age1;
+			}
+		});
+		// 리스트 출력하고
+		printList(list);
+	}
+	
+	public class MySort implements Comparator {
+
+		@Override
+		public int compare(Object o1, Object o2) {
+			// 이때 o1과 o2는 Map.Entry 타입의 객체이다.
+			// 따라서 둘을 Map.Entry로 강제 형변환하고
+			Map.Entry e1 = (Map.Entry) o1;
+			Map.Entry e2 = (Map.Entry) o2;
+			
+			// 정렬기준이 될 변수를 꺼내온다. 우리의 경우는 나이이니까 value를 꺼내온다.
+			Object tmp1 = e1.getValue();
+			Object tmp2 = e2.getValue();
+			
+			// 꺼내온 데이터를 정수로 강제 형변환 해준다.
+			int age1 = (int) tmp1;
+			int age2 = (int) tmp2;
+			
+			int result = age1 - age2;
+			return result;
+		}
 		
 	}
 	
