@@ -15,6 +15,8 @@ public class Test03 {
 		map = setData();
 		// 출력한다.
 		toPrint();
+		System.out.println();
+		toPrint(map);
 	}
 	
 	// map 초기화해주는 함수
@@ -49,6 +51,26 @@ public class Test03 {
 			Student stud = (Student) obj;
 			// toPrint() 호출
 			stud.toPrint();
+		}
+	}
+	
+	// HashMap을 입력하고 호출하면 맵의 내용을 출력해주는 함수
+	public void toPrint(HashMap m) {
+		Set set = m.entrySet();
+		/*
+			이 set 안에는 Map.Entry 타입의 데이터가 채워져있다.
+			Map.Entry는 이를테면 VO 클래스이다.
+		 */
+		Iterator itor = set.iterator();
+		// 데이터를 하나씩 꺼내서 출력한다.
+		while(itor.hasNext()) {
+			Object o = itor.next();
+			Map.Entry en = (Map.Entry) o;
+			
+			String key = (String) en.getKey();
+			Student val = (Student) en.getValue();
+			System.out.println("key : " + key);
+			System.out.println(val);
 		}
 	}
 	
